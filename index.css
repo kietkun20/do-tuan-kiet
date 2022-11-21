@@ -110,4 +110,7 @@
   .item{
     margin-bottom: 30.5px;
   }
+  span{
+    display: none;
+  }
 }
