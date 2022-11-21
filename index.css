@@ -107,4 +107,7 @@
   .item,.title,.content{
     width: 514px;
   }
+  .item{
+    margin-bottom: 30.5px;
+  }
 }
