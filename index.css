@@ -1,19 +1,16 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
   width: 1920px;
 }
 
 .desktop {
   display: flex;
-  justify-content: center;
   padding: 100px 376.5px 0 394.5px;
-  width: 100%;
 }
 
 .left {
-  width: 428px;
+  max-width: 428px;
   font-family: 'Poppins';
   font-size: 36px;
   font-weight: bold;
@@ -39,7 +36,7 @@
 .right {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  justify-content: space-between;
 }
 
 .item {
@@ -48,10 +45,6 @@
 
 .item1 {
   margin-bottom: 37px;
-}
-
-.item3 {
-  margin-right: 88px;
 }
 
 .title {
@@ -79,4 +72,39 @@
   text-align: left;
   color: gray;
   width: 273px;
+}
+@media screen and (max-width: 1024px) {
+  .desktop {
+    display: inline-block;
+    padding: 100px 145.5px;
+  }
+  .left{
+    margin-bottom: 51.9px;
+    max-width: 821px;
+  }
+  .right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 821px;
+  }
+  .item,.title,.content{
+    width: 370px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .desktop {
+    display: inline-block;
+    padding: 100px 126px;
+  }
+  .left{
+    margin-bottom: 51.9px;
+    max-width: 549px;
+  }
+  .right {
+    max-width: 514px;
+  }
+  .item,.title,.content{
+    width: 514px;
+  }
 }
