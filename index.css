@@ -15,8 +15,7 @@
 }
 
 .left {
-  margin-right: 87px;
-  margin-bottom: 51.9px;
+  margin: 0 87px 51.9px 0;
 }
 
 .crossbar {
@@ -108,6 +107,6 @@
   }
   .head{
     width: auto;
-    font-size: 22px;
+    font-size: 26px;
   }
 }
