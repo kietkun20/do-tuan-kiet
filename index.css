@@ -1,18 +1,23 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  width: 1920px;
   font-family: 'Poppins';
+  font-stretch: normal;
+  font-style: normal;
 }
 
 .desktop {
   display: flex;
-  padding: 100px 376.5px 0 394.5px;
+  justify-content: center;
+  padding-top: 100px;
+  width: 100%;
+  padding: 100px 394.5px 0 376.5px;
+  margin: auto;
 }
 
 .left {
-  width: 428px;
   margin-right: 87px;
+  margin-bottom: 51.9px;
 }
 
 .crossbar {
@@ -26,8 +31,6 @@
   width: 428px;
   font-size: 36px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.33;
   letter-spacing: -0.29px;
   text-align: left;
@@ -40,7 +43,7 @@
 }
 
 .item {
-  width: 273px;
+  width: 43.06%;
   margin-bottom: 37px;
 }
 
@@ -48,74 +51,63 @@
   margin: 0 0 7px;
   font-size: 24px;
   font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.17;
   letter-spacing: -0.19px;
   text-align: left;
   color: #1f2c40;
-  width: 273px;
 }
 
 .content {
   font-size: 18px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.33;
   letter-spacing: -0.14px;
   text-align: left;
   color: gray;
-  width: 273px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1919px) {
   .desktop {
-    display: inline-block;
-    padding: 100px 145.5px;
-  }
-
-  .left {
-    margin-bottom: 51.9px;
-    max-width: 821px;
-  }
-
-  .right {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 821px;
-  }
-
-  .item, .title, .content {
-    width: 370px;
+    padding: 100px 145.5px 0;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1439px) {
   .desktop {
     display: inline-block;
-    padding: 100px 126px;
+    padding: 100px 102px 0;
+  }
+  .head {
+    width: 821px;
+  }
+  .item3{
+    width: 45.13%;
+  }
+  .item4{
+    width: 48.18%;;
   }
 
+}
+
+@media screen and (max-width: 1023px) {
+  .desktop {
+    padding: 100px 126px 0;
+  }
+  .head{
+    width: 549px;
+  }
   .left {
-    margin-bottom: 51.9px;
-    max-width: 549px;
+    margin-bottom: 64.1px;
   }
-
-  .right {
-    max-width: 514px;
+  .item{
+    width: 100%;
   }
-
-  .item, .title, .content {
-    width: 514px;
+}
+@media screen and (max-width: 767px) {
+  .desktop{
+    padding: 50px;
   }
-
-  .item {
-    margin-bottom: 30.5px;
-  }
-
-  span {
-    display: none;
+  .head{
+    width: auto;
   }
 }
