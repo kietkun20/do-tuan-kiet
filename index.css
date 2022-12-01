@@ -36,10 +36,6 @@ h1 {
   margin-bottom: 64.1px;
 }
 
-.right {
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
 .item {
   margin-bottom: 37px;
@@ -70,6 +66,8 @@ p {
 
   .right {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .item {
