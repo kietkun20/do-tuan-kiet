@@ -4,18 +4,18 @@
   font-family: 'Poppins';
   font-stretch: normal;
   font-style: normal;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.33;
+  letter-spacing: -0.14px;
+  text-align: left;
 }
 
-.desktop {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 100px 394.5px 0 376.5px;
+section {
+  justify-content: space-between;
+  max-width: 71.5%;
   margin: auto;
-}
-
-.left {
-  margin: 0 87px 51.9px 0;
+  padding-top: 100px;
 }
 
 .crossbar {
@@ -25,27 +25,27 @@
   background-color: #e03116;
 }
 
-.head {
-  width: 428px;
+h1 {
   font-size: 36px;
   font-weight: bold;
   line-height: 1.33;
   letter-spacing: -0.29px;
-  text-align: left;
+}
+
+.left {
+  margin-bottom: 64.1px;
 }
 
 .right {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .item {
-  width: 43.06%;
   margin-bottom: 37px;
 }
 
-.title {
+h2 {
   margin: 0 0 7px;
   font-size: 24px;
   font-weight: 600;
@@ -55,58 +55,65 @@
   color: #1f2c40;
 }
 
-.content {
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.33;
-  letter-spacing: -0.14px;
-  text-align: left;
+p {
   color: gray;
 }
 
-@media screen and (max-width: 1919px) {
-  .desktop {
-    padding: 100px 145.5px 0;
-  }
-}
-
-@media screen and (max-width: 1439px) {
-  .desktop {
-    display: inline-block;
-    padding: 100px 102px 0;
-  }
-  .head {
-    width: 821px;
-  }
-  .item3{
-    width: 45.13%;
-  }
-  .item4{
-    width: 48.18%;;
+@media screen and (min-width: 768px) {
+  section {
+    max-width: 80.2%;
   }
 
-}
-
-@media screen and (max-width: 1023px) {
-  .desktop {
-    padding: 100px 126px 0;
-  }
-  .head{
-    width: 549px;
-  }
   .left {
-    margin-bottom: 64.1px;
+    margin-bottom: 51.9px;
   }
-  .item{
-    width: 100%;
+
+  .right {
+    display: flex;
+  }
+
+  .item {
+    max-width: 45.3%;
   }
 }
-@media screen and (max-width: 767px) {
-  .desktop{
-    padding: 50px;
+
+@media screen and (min-width: 1024px) {
+  section {
+    max-width: 79.8%;
+    display: flex;
   }
-  .head{
-    width: auto;
-    font-size: 26px;
+
+  .left {
+    margin-bottom: 0;
+    margin-right: 87px;
+  }
+
+  .right {
+    max-width: 55.2%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .left {
+    margin-bottom: 0;
+  }
+
+  .right {
+    max-width: 55.2%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  section {
+    max-width: 60%;
+    display: flex;
+  }
+
+  .left {
+    margin-bottom: 0;
+  }
+
+  .right {
+    max-width: 55.2%;
   }
 }
